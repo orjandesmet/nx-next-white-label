@@ -1,0 +1,23 @@
+{
+  "root": "libs/brand-batman",
+  "sourceRoot": "libs/brand-batman/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/brand-batman/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/brand-batman"],
+      "options": {
+        "jestConfig": "libs/brand-batman/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

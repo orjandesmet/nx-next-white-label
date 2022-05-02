@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-next-white-label/brand-batman": ["libs/brand-batman/src/index.ts"],
+      "@nx-next-white-label/brand-neutral": ["libs/brand-neutral/src/index.ts"],
+      "@nx-next-white-label/brand-wl": ["libs/brand-wl/src/index.ts"],
+      "@nx-next-white-label/components": ["libs/components/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

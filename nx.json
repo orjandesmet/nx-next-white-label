@@ -1,5 +1,5 @@
 {
-  "npmScope": "nx-next-test",
+  "npmScope": "nx-next-white-label",
   "affected": {
     "defaultBase": "main"
   },

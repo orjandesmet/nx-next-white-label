@@ -1,0 +1,23 @@
+{
+  "root": "libs/brand-neutral",
+  "sourceRoot": "libs/brand-neutral/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/brand-neutral/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/brand-neutral"],
+      "options": {
+        "jestConfig": "libs/brand-neutral/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

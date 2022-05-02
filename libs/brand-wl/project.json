@@ -1,0 +1,23 @@
+{
+  "root": "libs/brand-wl",
+  "sourceRoot": "libs/brand-wl/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/brand-wl/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/brand-wl"],
+      "options": {
+        "jestConfig": "libs/brand-wl/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

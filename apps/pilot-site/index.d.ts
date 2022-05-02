@@ -4,3 +4,7 @@ declare module '*.svg' {
   export const ReactComponent: any;
   export default content;
 }
+
+declare module '@nx-next-white-label/brand' {
+  export * from '@nx-next-white-label/brand-wl';
+}

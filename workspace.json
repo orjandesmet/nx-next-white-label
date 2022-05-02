@@ -1,7 +1,10 @@
 {
   "version": 2,
   "projects": {
-    "pilot-site": "apps/pilot-site",
-    "pilot-site-e2e": "apps/pilot-site-e2e"
+    "brand-batman": "libs/brand-batman",
+    "brand-neutral": "libs/brand-neutral",
+    "brand-wl": "libs/brand-wl",
+    "components": "libs/components",
+    "pilot-site": "apps/pilot-site"
   }
 }
