@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "pilot-site": "apps/pilot-site",
+    "pilot-site-e2e": "apps/pilot-site-e2e"
+  }
+}

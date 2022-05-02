@@ -1,0 +1,60 @@
+{
+  "root": "apps/pilot-site",
+  "sourceRoot": "apps/pilot-site",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/pilot-site",
+        "outputPath": "dist/apps/pilot-site"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "pilot-site:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "pilot-site:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "pilot-site:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "pilot-site:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/pilot-site"],
+      "options": {
+        "jestConfig": "apps/pilot-site/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/pilot-site/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}
