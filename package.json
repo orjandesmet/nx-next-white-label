@@ -44,6 +44,8 @@
     "eslint-plugin-react": "7.29.4",
     "eslint-plugin-react-hooks": "4.4.0",
     "jest": "27.5.1",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.0.0",
     "nx": "14.0.5",
     "prettier": "^2.5.1",
     "react-test-renderer": "18.0.0",

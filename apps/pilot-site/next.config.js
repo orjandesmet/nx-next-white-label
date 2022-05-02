@@ -1,5 +1,8 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withNx = require('@nrwl/next/plugins/with-nx');
+const withPlugins = require('next-compose-plugins');
+const withTM = require('next-transpile-modules')(['test']);
+
 const brand = (process.env.BRAND_NAME || 'wl').toLowerCase();
 console.log(`Running for brand '${process.env.BRAND_NAME}' -> '${brand}'`)
 /**
@@ -24,4 +27,10 @@ const nextConfig = {
   }
 };
 
-module.exports = withNx(nextConfig);
+module.exports = withPlugins([
+  withNx,
+  withTM,
+], nextConfig);
+// This is not good: https://github.com/nrwl/nx/issues/7203
+// https://www.npmjs.com/package/next-transpile-modules
+
