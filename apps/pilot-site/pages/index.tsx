@@ -1,4 +1,4 @@
-import { ExampleComponent, exampleFunction } from '@nx-next-white-label/brand';
+import { ExampleComponent, exampleFunction, OverrideScssExample } from '@nx-next-white-label/brand';
 import { Footer, Header } from '@nx-next-white-label/components';
 import styles from './index.module.scss';
 
@@ -14,6 +14,7 @@ export function Index() {
       <Header />
       <div>{result.join(', ')}</div>
       <ExampleComponent place="INDEX" />
+      <OverrideScssExample />
       <Footer />
     </div>
   );

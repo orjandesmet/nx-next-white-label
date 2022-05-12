@@ -1,0 +1,10 @@
+@use '@nx-next-white-label/brand-wl/lib/override-scss-example/override-scss-example.module.scss';
+
+.container {
+  --background: yellow;
+
+  &:hover {
+    background-color: black;
+    color: yellow;
+  }
+}

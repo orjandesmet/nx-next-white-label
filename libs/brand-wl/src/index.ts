@@ -1,3 +1,4 @@
+export * from './lib/override-scss-example/override-scss-example';
 export * from './lib/logo/logo';
 export * from './lib/componentConfig';
 export * from './lib/configCreator';
